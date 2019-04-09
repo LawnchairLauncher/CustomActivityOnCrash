@@ -16,5 +16,8 @@ android {
 apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
 
 dependencies {
-    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation('com.android.support:appcompat-v7:28.0.0') {
+        // The "MaterialButton" styleable defines an attr named iconSize which breaks compatibility with our source base
+        exclude group: 'com.android.support', module: 'design'
+    }
 }
