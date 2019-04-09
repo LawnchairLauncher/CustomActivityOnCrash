@@ -8,8 +8,8 @@ android {
         applicationId "cat.ereza.customactivityoncrash.sample"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 11
-        versionName "2.2.1"
+        versionCode 12
+        versionName "2.2.2"
     }
 
     buildTypes {
