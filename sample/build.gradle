@@ -6,16 +6,18 @@ android {
 
     defaultConfig {
         applicationId "cat.ereza.customactivityoncrash.sample"
-        minSdkVersion 14
+        minSdkVersion 21
         targetSdkVersion 28
         versionCode 11
         versionName "2.2.1-SNAPSHOT"
     }
+
     buildTypes {
         debug {
             minifyEnabled false
             proguardFiles 'proguard-rules.pro'
         }
+
         release {
             minifyEnabled false
             proguardFiles 'proguard-rules.pro'
